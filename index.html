@@ -14,6 +14,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/swiper.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -21,7 +22,7 @@
     <div class="burger">
         &#9776;
     </div>
-    <section class="section section--top-menu">
+    <section id="main-menu" class="section section--top-menu">
         <div class="wrapper wrapper--top-menu">
             <div class="top-menu__upper">
                 <div class="top-menu__left-side">
@@ -41,13 +42,13 @@
             </div>
             <div class="top-menu__lower">
                 <nav class="nav nav--top-menu">
-                    <div class="nav__item">О нас</div>
-                    <div class="nav__item">Почему мы</div>
-                    <div class="nav__item">Услуги</div>
-                    <div class="nav__item">Отзывы</div>
-                    <div class="nav__item">Работы</div>
-                    <div class="nav__item">Контакты</div>
-                    <div class="nav__item">Блог</div>
+                    <div class="nav__item" onclick="scrollTo">О нас</div>
+                    <div class="nav__item" onclick="scrollTo('reasons')">Почему мы</div>
+                    <div class="nav__item" onclick="scrollTo(services)">Услуги</div>
+                    <div class="nav__item" onclick="scrollTo(reviews)">Отзывы</div>
+                    <div class="nav__item" onclick="scrollTo(works)">Работы</div>
+                    <div class="nav__item" onclick="scrollTo(contacts)">Контакты</div>
+                    <div class="nav__item" onclick="scrollTo(blog)">Блог</div>
                 </nav>
             </div>
         </div>
@@ -86,13 +87,13 @@
         </div>
     </section>
 
-    <section class="section section--about">
+    <section id="about" class="section section--about">
         <div class="wrapper wrapper--about">
             <header class="name name--about">
-                <h1 class="header header--about">О нас</h1>
-                <h2 class="sub-header sub-header--about">И о нашей работе</h2>
+                <h1 class="header header--about wow fadeInUp">О нас</h1>
+                <h2 class="sub-header sub-header--about wow fadeInUp">И о нашей работе</h2>
             </header>
-            <div class="about">
+            <div class="about wow fadeInUp">
                 <div class="description about__description">
                     <p class="description__text">Компания <span class="span--bold">WebRomUveli</span> была основана в
                         2014 году. За это время мы создали
@@ -118,52 +119,52 @@
         </div>
     </section>
 
-    <section class="section section--advantages">
+    <section id="reasons" class="section section--advantages">
         <div class="wrapper wrapper--advantages">
             <header class="name name--advantages">
-                <h1 class="header header--advantages">Наши преимущества</h1>
-                <h2 class="sub-header sub-header--advantages">Или почему мы лучшие</h2>
+                <h1 class="header header--advantages wow fadeInUp">Наши преимущества</h1>
+                <h2 class="sub-header sub-header--advantages wow fadeInUp">Или почему мы лучшие</h2>
             </header>
             <div class="advantages">
                 <div class="advantages__container">
-                    <div class="advantage">
+                    <div class="advantage wow rollIn" data-wow-delay="0.1s">
                         <div class="advantage__icon">
                             <img class="img-w" src="./img/advantages/reputation.svg" alt="">
                         </div>
                         <div class="advantage__name">Работаем на репутацию</div>
                     </div>
-                    <div class="advantage">
+                    <div class="advantage wow rollIn" data-wow-delay="0.2s">
                         <div class="advantage__icon">
                             <img class="img-w" src="./img/advantages/trust.svg" alt="">
                         </div>
                         <div class="advantage__name">Нам доверяют</div>
                     </div>
-                    <div class="advantage">
+                    <div class="advantage wow rollIn" data-wow-delay="0.3s">
                         <div class="advantage__icon">
                             <img class="img-w" src="./img/advantages/specialist.svg" alt="">
                         </div>
                         <div class="advantage__name">Лучшие специалисты </div>
                     </div>
-                    <div class="advantage">
+                    <div class="advantage wow rollIn" data-wow-delay="0.4s">
                         <div class="advantage__icon">
                             <img class="img-w" src="./img/advantages/price.svg" alt="">
                         </div>
                         <div class="advantage__name">Доступные цены</div>
                     </div>
-                    <div class="advantage">
+                    <div class="advantage wow rollIn" data-wow-delay="0.5s">
                         <div class="advantage__icon">
                             <img class="img-w" src="./img/advantages/satisfaction.svg" alt="">
                         </div>
                         <div class="advantage__name">От “А” до “Я”</div>
                     </div>
-                    <div class="advantage">
+                    <div class="advantage wow rollIn" data-wow-delay="0.6s">
                         <div class="advantage__icon">
                             <img class="img-w" src="./img/advantages/result.svg" alt="">
                         </div>
                         <div class="advantage__name">Лучший результат</div>
                     </div>
                 </div>
-                <p class="advantages__text">
+                <p class="advantages__text wow fadeInUp">
                     Сомнение рефлектирует естественный закон исключённого третьего.. Дискретность амбивалентно
                     транспонирует гравитационный парадокс. Структурализм абстрактен. Дискретность амбивалентно
                     транспонирует гравитационный парадокс. Надстройка нетривиальна. Созерцание непредсказуемо.
@@ -176,11 +177,12 @@
     <section class="section section--empoyees">
         <div class="wrapper wrapper--empoyees">
             <header class="name name--employees">
-                <h1 class="header header--employees">Люди творящие чудеса</h1>
-                <h2 class="sub-header sub-header--employees">И помогающие осуществить самые смелые задумки</h2>
+                <h1 class="header header--employees wow fadeInUp">Люди творящие чудеса</h1>
+                <h2 class="sub-header sub-header--employees wow fadeInUp">И помогающие осуществить самые смелые задумки
+                </h2>
             </header>
             <div class="employees">
-                <div class="swiper-container swiper-container--employee">
+                <div class="swiper-container swiper-container--employee wow fadeInUp">
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -197,11 +199,11 @@
                             </figure>
                         </div>
                         <div class="swiper-slide">
-                                <figure class="employee">
-                                    <img class="employee__image" src="./img/employees/author.jpg" alt="">
-                                    <figcaption class="employee__position">SMM</figcaption>
-                                </figure>
-                            </div>
+                            <figure class="employee">
+                                <img class="employee__image" src="./img/employees/author.jpg" alt="">
+                                <figcaption class="employee__position">SMM</figcaption>
+                            </figure>
+                        </div>
 
                         <div class="swiper-slide">
                             <figure class="employee">
@@ -216,16 +218,17 @@
         </div>
     </section>
 
-    <section class="section section--services">
+    <section id="services" class="section section--services">
         <div class="wrapper wrapper--services">
             <header class="name name--services">
-                <h1 class="header header--services">Наши услуги</h1>
-                <h2 class="sub-header sub-header--services">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <h1 class="header header--services wow fadeInUp">Наши услуги</h1>
+                <h2 class="sub-header sub-header--services wow fadeInUp">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
                 </h2>
             </header>
             <div class="services">
                 <div class="services__container">
-                    <div class="service service--normal">
+                    <div class="service service--normal wow fadeInLeft">
                         <div class="service__description">
                             <header class="service__header">Создание сайта</header>
                             <p class="service__text service__text--normal">Создание сайта - это услуги разработки
@@ -240,7 +243,7 @@
                             <img src="./img/services/site.svg" alt="" class="img-w">
                         </div>
                     </div>
-                    <div class="service service--reverse">
+                    <div class="service service--reverse wow fadeInRight">
                         <div class="service__description">
                             <header class="service__header">ПОДДЕРЖКА САЙТА</header>
                             <p class="service__text service__text--reverse">Сопровождение сайта - это услуги по
@@ -254,7 +257,7 @@
                             <img src="./img/services/support.svg" alt="" class="img-w">
                         </div>
                     </div>
-                    <div class="service service--normal">
+                    <div class="service service--normal wow fadeInLeft">
                         <div class="service__description">
                             <header class="service__header">ПРОДВИЖЕНИЕ САЙТА</header>
                             <p class="service__text service__text--normal">Продвижение сайта - это услуги по настройке
@@ -267,7 +270,7 @@
                             <img src="./img/services/seo.svg" alt="" class="img-w">
                         </div>
                     </div>
-                    <div class="service service--reverse">
+                    <div class="service service--reverse wow fadeInRight">
                         <div class="service__description">
                             <header class="service__header service__header--reverse">ГРАФИЧЕСКИЙ ДИЗАЙН</header>
                             <p class="service__text service__text--reverse">Графический дизайн – это услуги по
@@ -304,15 +307,16 @@
         </div>
     </section>
 
-    <section class="section section--reviews">
+    <section id="reviews" class="section section--reviews">
         <div class="wrapper wrapper--reviews">
             <header class="name name--reviews">
-                <h1 class="header header--reviews">Что о нас говорят клиенты</h1>
-                <h2 class="sub-header sub-header--reviews">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <h1 class="header header--reviews wow fadeInUp">Что о нас говорят клиенты</h1>
+                <h2 class="sub-header sub-header--reviews wow fadeInUp">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
                 </h2>
             </header>
-            <div class="reviews">
-                    <div class="swiper-button-prev"></div>
+            <div class="reviews wow fadeInUp">
+                <div class="swiper-button-prev"></div>
                 <div class="swiper-container swiper-container--review">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -364,23 +368,24 @@
                             </div>
                         </div>
                     </div>
-                
+
                 </div>
                 <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
 
-    <section class="section section--contacts">
+    <section id="contacts" class="section section--contacts">
         <div class="wrapper wrapper--contacts">
             <header class="name name--contacts">
-                <h1 class="header header--contacts">Контакты</h1>
-                <h2 class="sub-header sub-header--contacts">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <h1 class="header header--contacts wow fadeInUp">Контакты</h1>
+                <h2 class="sub-header sub-header--contacts wow fadeInUp">Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit.
                 </h2>
             </header>
             <div class="contacts">
                 <div class="contacts__container">
-                    <div class="description contacts__description">
+                    <div class="description contacts__description wow fadeInLeft">
                         <header class="description__header description__header--contacts">
                             <p>Свяжитесь с нашими специалистами!</p>
                         </header>
@@ -397,7 +402,7 @@
                             <img class="img-w" src="./img/contacts/contacts.svg" alt="">
                         </div>
                     </div>
-                    <div>
+                    <div class=" wow fadeInRight">
                         <div class="form contacts__form form--contacts">
                             <header class="headers form__headers">
                                 <p class="header form__header--contacts">Оставьте заявку</p>
@@ -487,6 +492,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/wow.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/index.js"></script>
 </body>

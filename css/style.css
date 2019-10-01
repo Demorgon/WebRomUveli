@@ -4,11 +4,11 @@
     padding: 0;
 }
 html{
-    font-size: 18px;
+    font-size: 16px;
 }
 @media screen and (max-width: 1440px){
     html{
-        font-size: 16px;
+        font-size: 14px;
     }
 }
 @media screen and (max-width: 1024px){
@@ -34,7 +34,7 @@ body{
 .section{
     padding: 0 250px;
     /* border: 1px solid; */
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 @media screen and (max-width: 1600px){
     .section{
@@ -141,6 +141,7 @@ body{
     width: 100%;
     background-color: #fff;
     z-index: 998;
+    transition: 0.25s;
 }
 @media screen and (max-width: 1024px){
     .section--top-menu{
@@ -313,14 +314,14 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    min-height: 600px;
+    min-height: 450px;
 }
 @media screen and (max-width: 1024px){
     .hero{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
-        min-height: 450px;
+        min-height: 550px;
     }
 }
 @media screen and (max-width: 768px){
@@ -336,7 +337,7 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding-top: 120px;
+    padding-top: 100px;
     width: 40%;
     margin-bottom: 50px;
 }
@@ -1191,7 +1192,7 @@ body{
     }
 }
 .form--contacts{
-    width: 600px;
+    width: 500px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -1207,7 +1208,7 @@ body{
 }
 @media screen and (max-width: 1600px){
     .form--contacts{
-        width: 600px;
+        width: 500px;
         flex-shrink: 0;
         display: flex;
         flex-direction: column;
